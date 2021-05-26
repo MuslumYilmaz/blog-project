@@ -1,0 +1,186 @@
+.container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-areas: 
+    "hd"
+    "bl"
+    "ft";
+}
+
+.header {
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border-bottom: 1px solid black;
+}
+
+.blog {
+    grid-area: bl;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.footer {
+    grid-area: ft;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    border-top: 1px solid black;
+}
+
+.main {
+    font-family: 'Cinzel', serif;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 100px 50px 30px;
+    grid-template-areas: "image" "image" "image" "text" "author";
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.card-image1 {
+    grid-area: image;
+    background: url("../images/sneakers.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-image2 {
+    grid-area: image;
+    background: url("../images/sneaker-green.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-image3 {
+    grid-area: image;
+    background: url("../images/sneaker-colored.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 15px;
+}
+
+.card-text p {
+    margin: 20px;
+}
+
+.card-author {
+    grid-area: author;
+}
+
+.social {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 15vh 1fr 15vh;
+        grid-template-areas: 
+        "hd"
+        "bl"
+        "ft";
+    }
+    
+    .header {
+        grid-area: hd;
+    }
+
+    .nytimes {
+        display: none;
+    }
+
+    .blog {
+        grid-area: bl;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 15px;
+    }
+
+    .footer {
+        grid-area: ft;
+    }
+
+    .social {
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1300px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 15vh 1fr 15vh;
+        grid-template-areas: 
+        "hd"
+        "bl"
+        "ft";
+    }
+    
+    .header {
+        grid-area: hd;
+    }
+
+    .nytimes {
+        display: none;
+    }
+
+    .blog {
+        grid-area: bl;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 15px;
+    }
+
+    .footer {
+        grid-area: ft;
+    }
+}
