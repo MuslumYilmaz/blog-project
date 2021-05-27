@@ -1,12 +1,5 @@
-.container {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 15vh 70vh 15vh;
-    grid-template-areas: 
-    "hd"
-    "bl"
-    "ft";
-}
+@import url("container.css");
+@import url("card.css");
 
 .header {
     grid-area: hd;
@@ -50,56 +43,6 @@
 
 .about {
     font-family: 'Cinzel', serif;
-}
-
-.card {
-    display: grid;
-    grid-template-columns: 400px;
-    grid-template-rows: 100px 50px 30px;
-    grid-template-areas: "image" "image" "image" "text" "author";
-    font-family: 'Cinzel', serif;
-    font-size: 14px;
-    border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    text-align: center;
-}
-
-.card-image1 {
-    grid-area: image;
-    background: url("../images/sneakers.jpg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-}
-
-.card-image2 {
-    grid-area: image;
-    background: url("../images/sneaker-green.jpg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-}
-
-.card-image3 {
-    grid-area: image;
-    background: url("../images/sneaker-colored.jpg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-}
-
-.card-text {
-    grid-area: text;
-    margin: 15px;
-}
-
-.card-text p {
-    margin: 20px;
-}
-
-.card-author {
-    grid-area: author;
 }
 
 .social {

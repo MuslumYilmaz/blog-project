@@ -1,12 +1,4 @@
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: 15vh 70vh 15vh;
-    grid-template-areas: 
-    "hd hd hd hd hd hd hd hd"
-    "sec sec sec sec sec sec sec sec"
-    "ft ft ft ft ft ft ft ft";
-}
+@import url("container.css");
 
 .header {
     grid-area: hd;
@@ -36,7 +28,7 @@
 }
 
 .section {
-    grid-area: sec;
+    grid-area: bl;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
