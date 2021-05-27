@@ -1,8 +1,8 @@
 .card {
     display: grid;
     grid-template-columns: 400px;
-    grid-template-rows: 100px 50px 30px;
-    grid-template-areas: "image" "image" "image" "text" "author";
+    grid-template-rows: 100px 50px 30px 30px;
+    grid-template-areas: "image" "image" "image" "text" "author" "button";
     font-family: 'Cinzel', serif;
     font-size: 14px;
     border-radius: 18px;
@@ -46,4 +46,25 @@
 
 .card-author {
     grid-area: author;
+}
+
+.card-button {
+    grid-area: button;
+    font-family: 'Cinzel', serif;
+    background: none;
+    border: none;
+    margin-top: 5px;
+    color: white;
+}
+
+#one {
+    background-color: crimson;
+}
+
+#two {
+    background-color: limegreen;
+}
+
+#three {
+    background-color: blue;
 }
