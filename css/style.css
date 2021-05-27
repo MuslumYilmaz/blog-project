@@ -58,6 +58,10 @@
     font-family: 'Cinzel', serif;
 }
 
+.about {
+    font-family: 'Cinzel', serif;
+}
+
 .footer {
     grid-area: ft;
     display: flex;

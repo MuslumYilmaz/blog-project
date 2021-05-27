@@ -1,11 +1,11 @@
 .container {
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: repeat(3, 400px);
     grid-template-rows: 15vh 70vh 15vh;
     grid-template-areas: 
-    "hd"
-    "bl"
-    "ft";
+    "hd hd hd hd hd hd hd hd"
+    "sec sec sec sec sec sec sec sec"
+    "ft ft ft ft ft ft ft ft";
 }
 
 .header {
@@ -17,12 +17,12 @@
     border-bottom: 1px solid black;
 }
 
+.main {
+    font-family: 'Cinzel', serif;
+}
+
 .blog {
-    grid-area: bl;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-evenly;
+    font-family: 'Cinzel', serif;
 }
 
 .btn {
@@ -35,28 +35,19 @@
     border-radius: 10px;
 }
 
-.footer {
-    grid-area: ft;
+.section {
+    grid-area: sec;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    border-top: 1px solid black;
-}
-
-.main {
-    font-family: 'Cinzel', serif;
-}
-
-.about {
-    font-family: 'Cinzel', serif;
+    justify-content: space-evenly;
 }
 
 .card {
     display: grid;
     grid-template-columns: 400px;
-    grid-template-rows: 100px 50px 30px;
-    grid-template-areas: "image" "image" "image" "text" "author";
+    grid-template-rows: 150px 5px 60px 10px 180px 50px;
+    grid-template-areas: "image" "caption" "author"  "title" "text" "icons";
     font-family: 'Cinzel', serif;
     font-size: 14px;
     border-radius: 18px;
@@ -65,28 +56,21 @@
     text-align: center;
 }
 
-.card-image1 {
+.card-image-author {
     grid-area: image;
-    background: url("../images/sneakers.jpg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
-.card-image2 {
-    grid-area: image;
-    background: url("../images/sneaker-green.jpg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
+.card-caption {
+    grid-area: caption;
+    margin: 5px;
 }
 
-.card-image3 {
-    grid-area: image;
-    background: url("../images/sneaker-colored.jpg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
+.card-title {
+    grid-area: title;
 }
 
 .card-text {
@@ -94,12 +78,24 @@
     margin: 15px;
 }
 
-.card-text p {
-    margin: 20px;
-}
-
 .card-author {
     grid-area: author;
+}
+
+.icons {
+    grid-area: icons;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    grid-area: ft;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    border-top: 1px solid black;
 }
 
 .social {
@@ -117,7 +113,7 @@
         grid-template-rows: 15vh 1fr 15vh;
         grid-template-areas: 
         "hd"
-        "bl"
+        "sec"
         "ft";
     }
     
@@ -129,8 +125,8 @@
         display: none;
     }
 
-    .blog {
-        grid-area: bl;
+    .section {
+        grid-area: sec;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -160,7 +156,7 @@
         grid-template-rows: 15vh 1fr 15vh;
         grid-template-areas: 
         "hd"
-        "bl"
+        "sec"
         "ft";
     }
     
@@ -172,8 +168,8 @@
         display: none;
     }
 
-    .blog {
-        grid-area: bl;
+    .section {
+        grid-area: sec;
         display: flex;
         flex-direction: column;
         align-items: center;
