@@ -36,7 +36,6 @@
 
 .title {
     font-family: 'Pattaya', sans-serif;
-    font-style: italic;
 }
 
 .second-title {
@@ -56,18 +55,23 @@
 
 .blog {
     font-family: 'Cinzel', serif;
+    text-decoration: none;
 }
 
 .about {
     font-family: 'Cinzel', serif;
+    text-decoration: none;
 }
 
 .footer {
     grid-area: ft;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 50px;
     border-top: 1px solid black;
+    background-color: #9C27B0;
+    color: white;
 }
 
 .social {
@@ -129,6 +133,9 @@
         justify-content: space-between;
         padding: 50px;
         border-top: 1px solid black;
+        align-items: center;
+        background-color: #9C27B0;
+        color: white;
     }
 
     .social {
@@ -193,6 +200,9 @@
         justify-content: space-between;
         padding: 50px;
         border-top: 1px solid black;
+        align-items: center;
+        background-color: #9C27B0;
+        color: white;
     }
 
     .social {

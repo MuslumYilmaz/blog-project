@@ -11,10 +11,12 @@
 
 .main {
     font-family: 'Cinzel', serif;
+    text-decoration: none;
 }
 
 .blog {
     font-family: 'Cinzel', serif;
+    text-decoration: none;
 }
 
 .btn {
@@ -88,6 +90,9 @@
     justify-content: space-between;
     padding: 50px;
     border-top: 1px solid black;
+    align-items: center;
+    background-color: #FFACFC;
+    color: white;
 }
 
 .social {
@@ -131,6 +136,8 @@
 
     .footer {
         grid-area: ft;
+        background-color: #FFACFC;
+        color: white;
     }
 
     .social {
@@ -174,5 +181,7 @@
 
     .footer {
         grid-area: ft;
+        background-color: #FFACFC;
+        color: white;
     }
 }
